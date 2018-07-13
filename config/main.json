@@ -11,7 +11,7 @@
   ],
   "ethTestnet": false,
   "ethChainId": 60,
-  "ethProvider": "https://testnet-rpc.gochain.io:443",
+  "ethProvider": "https://rpc.gochain.io:443",
   "ethGasPrice": 4000000000,
   "ethAddr": "0x0000000000000000000000000000000000000000",
   "ethAddrPrivateKey": "",
