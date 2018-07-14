@@ -97,7 +97,7 @@
         Wrapper.getPersonalDepositAddress(account, function(err, result) {
           depositAddress = result;
           if (depositAddress != '0x0000000000000000000000000000000000000000') {
-            $('#depositAddress').html('<p>Deposit address: <a href="https://etherscan.io/address/'+depositAddress+'" target="_blank">'+depositAddress+'</a></p>');
+            $('#depositAddress').html('<p>Deposit address: <a href="https://explorer.gochain.io/address/'+depositAddress+'" target="_blank">'+depositAddress+'</a></p>');
             var html = '<p><input class="form-control" style="width: 150px; display: inline;" type="text" id="depositAmount"> <button class="btn btn-default" onclick="sendGNT();">Send GNT</button></p>';
             if ($('#sendGNT').html()!=html) $('#sendGNT').html(html);
             GNT.balanceOf(depositAddress, function(err, result) {
@@ -157,7 +157,7 @@
       }
 
       function txSent(hash) {
-        alert('You sent a transaction. Follow it here: <a href="https://etherscan.io/tx/'+hash+'" target="_blank">'+hash+'</a>');
+        alert('You sent a transaction. Follow it here: <a href="https://explorer.gochain.io/tx/'+hash+'" target="_blank">'+hash+'</a>');
       }
 
       function alert(message) {
